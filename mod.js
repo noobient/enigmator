@@ -6,174 +6,111 @@ itemNames.forEach((item) => {
   const itemtype = item.Key;
   let newName = null;
 
-  // highlight base item if set to be highlighted, but first check if it actually exists in the config
+  // Highlight base item if set to be highlighted, but first check if it actually exists in the config
   if (Object.hasOwn(config, "bth_" + itemtype) && config["bth_" + itemtype]) {
     newName = item.enUS + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
   }
 
-  // Scroll of Town Portal
-  if (itemtype === 'tsc') {
-    newName = `Tp`;
-  }
-
-  // Scroll of Identify
-  if (itemtype === 'isc') {
-    newName = `Id`;
-  }
-
-  // Strangling Gas Potion
-  if (itemtype === 'gpl') {
-    newName = `Sgp`;
-  }
-
-  // Fulminating Potion
-  if (itemtype === 'opl') {
-    newName = `Fulm`;
-  }
-
-  // Choking Gas Potion
-  if (itemtype === 'gpm') {
-    newName = `Cgp`;
-  }
-
-  // Exploding Potion
-  if (itemtype === 'opm') {
-    newName = `Expl`;
-  }
-
-  // Rancid Gas Potion
-  if (itemtype === 'gps') {
-    newName = `Rgp`;
-  }
-
-  // Oil Potion
-  if (itemtype === 'ops') {
-    newName = `Oil`;
-  }
-
-  // Stamina Potion
-  if (itemtype === 'vps') {
-    newName = `Stam`;
-  }
-
-  // Antidote Potion
-  if (itemtype === 'yps') {
-    newName = `Ant`;
-  }
-
-  // Rejuvenation Potion
-  if (itemtype === 'rvs') {
-    newName = `Rejuv`;
-  }
-
-  // Full Rejuvination Potion
-  if (itemtype === 'rvl') {
-    newName = `ÿc;!FullRejuva`;
-  }
-
-  // Thawing Potion
-  if (itemtype === 'wms') {
-    newName = `Thaw`;
-  }
-
-  // Minor Healing Potion
-  if (itemtype === 'hp1') {
-    newName = `Hpÿc1¹`;
-  }
-
-  // Light Healing Potion
-  if (itemtype === 'hp2') {
-    newName = `Hpÿc1²`;
-  }
-
-  // Healing Potion
-  if (itemtype === 'hp3') {
-    newName = `Hpÿc1³`;
-  }
-
-  // Greater Healing Potion
-  if (itemtype === 'hp4') {
-    newName = `ÿc1-ÿc0Hp`;
-  }
-
-  // Super Healing Potion
-  if (itemtype === 'hp5') {
-    newName = `ÿc1!ÿc0Hp`;
-  }
-
-  // Minor Mana Potion
-  if (itemtype === 'mp1') {
-    newName = `Mpÿc3¹`;
-  }
-
-  // Light Mana Potion
-  if (itemtype === 'mp2') {
-    newName = `Mpÿc3²`;
-  }
-
-  // Mana Potion
-  if (itemtype === 'mp3') {
-    newName = `Mpÿc3³`;
-  }
-
-  // Greater Mana Potion
-  if (itemtype === 'mp4') {
-    newName = `ÿc3-ÿc0Mp`;
-  }
-
-  // Super Mana Potion
-  if (itemtype === 'mp5') {
-    newName = `ÿc3!ÿc0Mp`;
-  }
-
-  // Small Charm
-  if (itemtype === 'cm1') {
-    newName = `• ÿcNSmall Charm`;
-  }
-
-  // Grand Charm
-  if (itemtype === 'cm3') {
-    newName = `• ÿcNGrand Charm`;
-  }
-
-  // Jewel
-  if (itemtype === 'jew') {
-    newName = `• ÿcNJewel`;
-  }
-
-  // F Amethyst
-  if (itemtype === 'gzv') {
-    newName = `ÿc7[ÿc;@ÿc7] ÿc0Flawless Amethyst`;
-  }
-
-  // F Topaz
-  if (itemtype === 'gly') {
-    newName = `ÿc7[ÿc9@ÿc7] ÿc0Flawless Topaz`;
-  }
-
-  // F Sapphire
-  if (itemtype === 'glb') {
-    newName = `ÿc7[ÿcN@ÿc7] ÿc0Flawless Sapphire`;
-  }
-
-  // F Emerald
-  if (itemtype === 'glg') {
-    newName = `ÿc7[ÿcQ@ÿc7] ÿc0Flawless Emerald`;
-  }
-
-  // F Ruby
-  if (itemtype === 'glr') {
-    newName = `ÿc7[ÿcU@ÿc7] ÿc0Flawless Ruby`;
-  }
-
-  // F Diamond
-  if (itemtype === 'glw') {
-    newName = `ÿc7[ÿcF@ÿc7] ÿc0Flawless Diamond`;
-  }
-
-  // F Skull
-  if (itemtype === 'skl') {
-    newName = `ÿc7[ÿcH@ÿc7] ÿc0Flawless Skull`;
+  switch(itemtype) {
+    case "tsc": // Scroll of Town Portal
+      newName = `Tp`;
+      break;
+    case "isc": // Scroll of Identify
+      newName = `Id`;
+      break;
+    case "gpl": // Strangling Gas Potion
+      newName = `Sgp`;
+      break;
+    case "opl": // Fulminating Potion
+      newName = `Fulm`;
+      break;
+    case "gpm": // Choking Gas Potion
+      newName = `Cgp`;
+      break;
+    case "opm": // Exploding Potion
+      newName = `Expl`;
+      break;
+    case "gps": // Rancid Gas Potion
+      newName = `Rgp`;
+      break;
+    case "ops": // Oil Potion
+      newName = `Oil`;
+      break;
+    case "vps": // Stamina Potion
+      newName = `Stam`;
+      break;
+    case "yps": // Antidote Potion
+      newName = `Ant`;
+      break;
+    case "rvs": // Rejuvenation Potion
+      newName = `Rejuv`;
+      break;
+    case "rvl": // Full Rejuvination Potion
+      newName = `ÿc;!FullRejuva`;
+      break;
+    case "wms": // Thawing Potion
+      newName = `Thaw`;
+      break;
+    case "hp1": // Minor Healing Potion
+      newName = `Hpÿc1¹`;
+      break;
+    case "hp2": // Light Healing Potion
+      newName = `Hpÿc1²`;
+      break;
+    case "hp3": // Healing Potion
+      newName = `Hpÿc1³`;
+      break;
+    case "hp4": // Greater Healing Potion
+      newName = `ÿc1-ÿc0Hp`;
+      break;
+    case "hp5": // Super Healing Potion
+      newName = `ÿc1!ÿc0Hp`;
+      break;
+    case "mp1": // Minor Mana Potion
+      newName = `Mpÿc3¹`;
+      break;
+    case "mp2": // Light Mana Potion
+      newName = `Mpÿc3²`;
+      break;
+    case "mp3": // Mana Potion
+      newName = `Mpÿc3³`;
+      break;
+    case "mp4": // Greater Mana Potion
+      newName = `ÿc3-ÿc0Mp`;
+      break;
+    case "mp5": // Super Mana Potion
+      newName = `ÿc3!ÿc0Mp`;
+      break;
+    case "cm1": // Small Charm
+      newName = `• ÿcNSmall Charm`;
+      break;
+    case "cm3": // Grand Charm
+      newName = `• ÿcNGrand Charm`;
+      break;
+    case "jew": // Jewel
+      newName = `• ÿcNJewel`;
+      break;
+    case "gzv": // F Amethyst
+      newName = `ÿc7[ÿc;@ÿc7] ÿc0Flawless Amethyst`;
+      break;
+    case "gly": // F Topaz
+      newName = `ÿc7[ÿc9@ÿc7] ÿc0Flawless Topaz`;
+      break;
+    case "glb": // F Sapphire
+      newName = `ÿc7[ÿcN@ÿc7] ÿc0Flawless Sapphire`;
+      break;
+    case "glg": // F Emerald
+      newName = `ÿc7[ÿcQ@ÿc7] ÿc0Flawless Emerald`;
+      break;
+    case "glr": // F Ruby
+      newName = `ÿc7[ÿcU@ÿc7] ÿc0Flawless Ruby`;
+      break;
+    case "glw": // F Diamond
+      newName = `ÿc7[ÿcF@ÿc7] ÿc0Flawless Diamond`;
+      break;
+    case "skl": // F Skull
+      newName = `ÿc7[ÿcH@ÿc7] ÿc0Flawless Skull`;
+      break;
   }
 
   if (newName != null) {
