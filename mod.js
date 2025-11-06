@@ -221,171 +221,54 @@ itemRunes.forEach((item) => {
   const itemtype = item.Key;
   let newName = null;
 
-  // El
-  if (itemtype === 'r01') {
-    newName = `El ÿc5[ÿc71ÿc5]`;
+  switch(itemtype) {
+    // Low runes from El to Lem
+    case "r01":
+    case "r02":
+    case "r03":
+    case "r04":
+    case "r05":
+    case "r06":
+    case "r07":
+    case "r08":
+    case "r09":
+    case "r10":
+    case "r11":
+    case "r12":
+    case "r13":
+    case "r14":
+    case "r15":
+    case "r16":
+    case "r17":
+    case "r18":
+    case "r19":
+    case "r20":
+      // remove leading 'r', then convert to number to remove any leading zero for first 9 levels
+      newName = item.enUS + ` ÿc5[ÿc7` + Number(itemtype.substring(1)) + `ÿc5]`;
+      break;
+    // Pul, Um, Mal, Ist
+    case "r21":
+    case "r22":
+    case "r23":
+    case "r24":
+      newName = `ÿc1*  ÿc@` + item.enUS + ` ÿc0[ÿc1` + itemtype.substring(1) + `ÿc0]  ÿc1*`;
+      break;
+    // Gul, Vex, Ohm, Lo
+    case "r25":
+    case "r26":
+    case "r27":
+    case "r28":
+      newName = `ÿcA*ÿc1*  ÿc@` + item.enUS + ` ÿc0[ÿc1` + itemtype.substring(1) + `ÿc0]  ÿcA*ÿc1*`;
+      break;
+    // Sur, Ber, Jah, Cham, Zod
+    case "r29":
+    case "r30":
+    case "r31":
+    case "r32":
+    case "r33":
+      newName = `ÿc;*ÿc2*ÿc1*    ÿc@` + item.enUS + ` ÿc0[ÿc2` + itemtype.substring(1) + `ÿc0]    ÿc;*ÿc2*ÿc1*`;
+      break;
   }
-  
-  // Eld
-  if (itemtype === 'r02') {
-    newName = `Eld ÿc5[ÿc72ÿc5]`;
-  }
-
-  // Tir
-  if (itemtype === 'r03') {
-    newName = `Tir ÿc5[ÿc73ÿc5]`;
-  }  
-  
-  // Nef
-  if (itemtype === 'r04') {
-    newName = `Nef ÿc5[ÿc74ÿc5]`;
-  }
-
-  // Eth
-  if (itemtype === 'r05') {
-    newName = `Eth ÿc5[ÿc75ÿc5]`;
-  }
-
-  // Ith
-  if (itemtype === 'r06') {
-    newName = `Ith ÿc5[ÿc76ÿc5]`;
-  }
-
-  // Tal
-  if (itemtype === 'r07') {
-    newName = `Tal ÿc5[ÿc77ÿc5]`;
-  }
-  
-  // Ral
-  if (itemtype === 'r08') {
-    newName = `Ral ÿc5[ÿc78ÿc5]`;
-  }
-
-  // Ort
-  if (itemtype === 'r09') {
-    newName = `Ort ÿc5[ÿc79ÿc5]`;
-  }
-
-  // Thul
-  if (itemtype === 'r10') {
-    newName = `Thul ÿc5[ÿc710ÿc5]`;
-  }
-  
-  // Amn
-  if (itemtype === 'r11') {
-    newName = `Amn ÿc5[ÿc711ÿc5]`;
-  }
-
-  // Sol
-  if (itemtype === 'r12') {
-    newName = `Sol ÿc5[ÿc712ÿc5]`;
-  }
-
-  // Shael
-  if (itemtype === 'r13') {
-    newName = `Shael ÿc5[ÿc713ÿc5]`;
-  }
-  
-  // Dol
-  if (itemtype === 'r14') {
-    newName = `Dol ÿc5[ÿc714ÿc5]`;
-  }
-
-  // Hel
-  if (itemtype === 'r15') {
-    newName = `Hel ÿc5[ÿc715ÿc5]`;
-  }
-
-  // Io
-  if (itemtype === 'r16') {
-    newName = `Io ÿc5[ÿc716ÿc5]`;
-  }
-  
-  // Lum
-  if (itemtype === 'r17') {
-    newName = `Lum ÿc5[ÿc717ÿc5]`;
-  }
-  
-  // Ko
-  if (itemtype === 'r18') {
-    newName = `Ko ÿc5[ÿc718ÿc5]`;
-  }
-
-  // Fal
-  if (itemtype === 'r19') {
-    newName = `Fal ÿc5[ÿc719ÿc5]`;
-  }
-  
-  // Lem
-  if (itemtype === 'r20') {
-    newName = `Lem ÿc5[ÿc720ÿc5]`;
-  }
-
-  // Pul
-  if (itemtype === 'r21') {
-    newName = `ÿc1*  ÿc@Pul ÿc0[ÿc121ÿc0]  ÿc1*`;
-  }
-
-  // Um
-  if (itemtype === 'r22') {
-    newName = `ÿc1*  ÿc@Um ÿc0[ÿc122ÿc0]  ÿc1*`;
-  }
-
-  // Mal
-  if (itemtype === 'r23') {
-    newName = `ÿc1*  ÿc@Mal ÿc0[ÿc123ÿc0]  ÿc1*`;
-  }
-
-  // Ist
-  if (itemtype === 'r24') {
-    newName = `ÿc1*  ÿc@Ist ÿc0[ÿc124ÿc0]  ÿc1*`;
-  }
-
-  // Gul
-  if (itemtype === 'r25') {
-    newName = `ÿcA*ÿc1*  ÿc@Gul ÿc0[ÿc125ÿc0]  ÿcA*ÿc1*`;
-  }
-
-  // Vex
-  if (itemtype === 'r26') {
-    newName = `ÿcA*ÿc1*  ÿc@Vex ÿc0[ÿc126ÿc0]  ÿcA*ÿc1*`;
-  }
-
-  // Ohm
-  if (itemtype === 'r27') {
-    newName = `ÿcA*ÿc1*  ÿc@Ohm ÿc0[ÿc127ÿc0]  ÿcA*ÿc1*`;
-  }
-
-  // Lo
-  if (itemtype === 'r28') {
-    newName = `ÿcA*ÿc1*  ÿc@Lo ÿc0[ÿc128ÿc0]  ÿcA*ÿc1*`;
-  }
-
-  // Sur
-  if (itemtype === 'r29') {
-    newName = `ÿc;*ÿc2*ÿc1*    ÿc@Sur ÿc0[ÿc229ÿc0]    ÿc;*ÿc2*ÿc1*`;
-  }
-
-  // Ber
-  if (itemtype === 'r30') {
-    newName = `ÿc;*ÿc2*ÿc1*    ÿc@Ber ÿc0[ÿc230ÿc0]    ÿc;*ÿc2*ÿc1*`;
-  }
-
-  // Jah
-  if (itemtype === 'r31') {
-    newName = `ÿc;*ÿc2*ÿc1*    ÿc@Jah ÿc0[ÿc231ÿc0]    ÿc;*ÿc2*ÿc1*`;
-  }
-
-  // Cham
-  if (itemtype === 'r32') {
-    newName = `ÿc;*ÿc2*ÿc1*    ÿc@Cham ÿc0[ÿc232ÿc0]   ÿc;*ÿc2*ÿc1*`;
-  }
-
-  // Zod
-  if (itemtype === 'r33') {
-    newName = `ÿc;*ÿc2*ÿc1*    ÿc@Zod ÿc0[ÿc233ÿc0]    ÿc;*ÿc2*ÿc1*`;
-  }
-
   
   if (newName != null) {
     // update all localizations
