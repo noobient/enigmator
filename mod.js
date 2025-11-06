@@ -2,30 +2,13 @@
 const itemNamesFilename = 'local\\lng\\strings\\item-names.json';
 const itemNames = D2RMM.readJson(itemNamesFilename);
 
-const baseNames = new Map([
-  ['utp', 'Archon Plate'],
-  // ['ci0', 'Circlet'],
-  // ['crs', 'Crystal Sword'],
-  ['ci3', 'Diadem'],
-  ['uui', 'Dusk Shroud'],
-  ['7wc', 'Giant Thresher'],
-  ['9tw', 'Greater Talons'],
-  // ['xtp', 'Mage Plate'],
-  // ['7br', 'Mancatcher'],
-  // ['mpi', 'Military Pick'],
-  // ['uit', 'Monarch'],
-  // ['7cr', 'Phase Blade'],
-  // ['7s8', 'Thresher'],
-  // ['ci2', 'Tiara']
-]);
-
 itemNames.forEach((item) => {
   const itemtype = item.Key;
   let newName = null;
 
   // highlight base item if set to be highlighted, but first check if it actually exists in the config
-  if (Object.hasOwn(config, itemtype) && config[itemtype]) {
-    newName = baseNames.get(itemtype) + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
+  if (Object.hasOwn(config, "bth_" + itemtype) && config["bth_" + itemtype]) {
+    newName = item.enUS + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
   }
 
   // Scroll of Town Portal

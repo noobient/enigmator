@@ -7,34 +7,277 @@
   "config": [
     {
       "id": "highlightBases",
-      "name": "Hightlight Bases",
-      "description": "Option to hightlight desirable bases",
+      "name": "Highlight Bases",
+      "description": "Option to highlight desirable bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
       "type": "section",
       "children": [
         {
-          "id": "elite",
-          "name": "Elite",
-          "description": "Elite items",
+          "id": "normal",
+          "name": "Normal",
           "type": "section",
+          "defaultExpanded": false,
           "children": [
             {
-              "id": "armor",
+              "id": "normalArmor",
               "name": "Armor",
-              "description": "Armors",
               "type": "section",
+              "defaultExpanded": false,
               "children": [
                 {
-                  "defaultValue": false,
-                  "name": "Dusk Shroud",
-                  "description": "Dusk Shroud",
-                  "id": "uui",
+                  "id": "bth_qui",
+                  "name": "Quilted Armor",
                   "type": "checkbox"
                 },
                 {
-                  "defaultValue": false,
+                  "id": "bth_lea",
+                  "name": "Leather Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hla",
+                  "name": "Hard Leather Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_stu",
+                  "name": "Studded Leather",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_rng",
+                  "name": "Ring Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_scl",
+                  "name": "Scale Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_brs",
+                  "name": "Breast Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_chn",
+                  "name": "Chain Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_spl",
+                  "name": "Splint Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ltp",
+                  "name": "Light Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_fld",
+                  "name": "Field Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_plt",
+                  "name": "Plate Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gth",
+                  "name": "Gothic Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ful",
+                  "name": "Full Plate Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_aar",
+                  "name": "Ancient Armor",
+                  "type": "checkbox"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exceptional",
+          "name": "Exceptional",
+          "type": "section",
+          "defaultExpanded": false,
+          "children": [
+            {
+              "id": "exceptionalArmor",
+              "name": "Armor",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_xui",
+                  "name": "Ghost Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xea",
+                  "name": "Serpentskin Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xla",
+                  "name": "Demonhide Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xtu",
+                  "name": "Trellised Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xng",
+                  "name": "Linked Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xcl",
+                  "name": "Tigulated Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xrs",
+                  "name": "Cuirass",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xhn",
+                  "name": "Mesh Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xpl",
+                  "name": "Russet Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xtp",
+                  "name": "Mage Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xld",
+                  "name": "Sharktooth Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xlt",
+                  "name": "Templar Coat",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xth",
+                  "name": "Embossed Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xul",
+                  "name": "Chaos Armor",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xar",
+                  "name": "Ornate Plate",
+                  "type": "checkbox"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "elite",
+          "name": "Elite",
+          "type": "section",
+          "defaultExpanded": false,
+          "children": [
+            {
+              "id": "eliteArmor",
+              "name": "Armor",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_uui",
+                  "name": "Dusk Shroud",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uea",
+                  "name": "Wyrmhide",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ula",
+                  "name": "Scarab Husk",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_utu",
+                  "name": "Wire Fleece",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ung",
+                  "name": "Diamond Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ucl",
+                  "name": "Loricated Mail",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_urs",
+                  "name": "Great Hauberk",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_umb",
+                  "name": "Boneweave",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_upl",
+                  "name": "Balrog Skin",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_utp",
                   "name": "Archon Plate",
-                  "description": "Archon Plate",
-                  "id": "utp",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uld",
+                  "name": "Kraken Shell",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ult",
+                  "name": "Hellforge Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uth",
+                  "name": "Lacquered Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uul",
+                  "name": "Shadow Plate",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uar",
+                  "name": "Sacred Armor",
                   "type": "checkbox"
                 }
               ]
