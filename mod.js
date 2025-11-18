@@ -27,83 +27,17 @@ itemNames.forEach((item) => {
   }
 
   switch(itemtype) {
-    case "tsc": // Scroll of Town Portal
-      newName = `Tp`;
-      break;
-    case "isc": // Scroll of Identify
-      newName = `Id`;
-      break;
-    case "gpl": // Strangling Gas Potion
-      newName = `Sgp`;
-      break;
-    case "opl": // Fulminating Potion
-      newName = `Fulm`;
-      break;
-    case "gpm": // Choking Gas Potion
-      newName = `Cgp`;
-      break;
-    case "opm": // Exploding Potion
-      newName = `Expl`;
-      break;
-    case "gps": // Rancid Gas Potion
-      newName = `Rgp`;
-      break;
-    case "ops": // Oil Potion
-      newName = `Oil`;
-      break;
-    case "vps": // Stamina Potion
-      newName = `Stam`;
-      break;
-    case "yps": // Antidote Potion
-      newName = `Ant`;
-      break;
-    case "rvs": // Rejuvenation Potion
-      newName = `Rejuv`;
-      break;
-    case "rvl": // Full Rejuvination Potion
-      newName = `ÿc;!FullRejuva`;
-      break;
-    case "wms": // Thawing Potion
-      newName = `Thaw`;
-      break;
-    case "hp1": // Minor Healing Potion
-      newName = `Hpÿc1¹`;
-      break;
-    case "hp2": // Light Healing Potion
-      newName = `Hpÿc1²`;
-      break;
-    case "hp3": // Healing Potion
-      newName = `Hpÿc1³`;
-      break;
-    case "hp4": // Greater Healing Potion
-      newName = `ÿc1-ÿc0Hp`;
-      break;
-    case "hp5": // Super Healing Potion
-      newName = `ÿc1!ÿc0Hp`;
-      break;
-    case "mp1": // Minor Mana Potion
-      newName = `Mpÿc3¹`;
-      break;
-    case "mp2": // Light Mana Potion
-      newName = `Mpÿc3²`;
-      break;
-    case "mp3": // Mana Potion
-      newName = `Mpÿc3³`;
-      break;
-    case "mp4": // Greater Mana Potion
-      newName = `ÿc3-ÿc0Mp`;
-      break;
-    case "mp5": // Super Mana Potion
-      newName = `ÿc3!ÿc0Mp`;
+    case "rvl": // Full Rejuvenation Potion
+      newName = `Full ÿc;Rejuvenationÿc0 Potion`;
       break;
     case "cm1": // Small Charm
-      newName = `Small Charm ÿcN•`;
+      newName = `Small Charm ÿcO•`;
       break;
     case "cm2": // Large Charm
-      newName = `Large Charm ÿcN••`;
+      newName = `Large Charm ÿcO••`;
       break;
     case "cm3": // Grand Charm
-      newName = `Grand Charm ÿcN•••`;
+      newName = `Grand Charm ÿcO•••`;
       break;
     case "jew": // Jewel
       newName = `• Jewel •ÿcN`;
