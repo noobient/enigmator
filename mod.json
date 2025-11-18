@@ -318,6 +318,49 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "normalKatar",
+              "name": "Katar",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ktr",
+                  "name": "Katar",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_wrb",
+                  "name": "Wrist Blade",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_axf",
+                  "name": "Hatchet Hands",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ces",
+                  "name": "Cestus",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_clw",
+                  "name": "Claws",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_btl",
+                  "name": "Blade Talons",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_skr",
+                  "name": "Scissors Katar",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -409,6 +452,49 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "exceptionalKatar",
+              "name": "Katar",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9ar",
+                  "name": "Quhab",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9wb",
+                  "name": "Wrist Spike",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9xf",
+                  "name": "Fascia",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9cs",
+                  "name": "Hand Scythe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9lw",
+                  "name": "Greater Claws",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9tw",
+                  "name": "Greater Talons",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9qr",
+                  "name": "Scissors Quhab",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -497,6 +583,49 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteKatar",
+              "name": "Katar",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7ar",
+                  "name": "Suwayyah",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7wb",
+                  "name": "Wrist Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7xf",
+                  "name": "War Fist",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7cs",
+                  "name": "Battle Cestus",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7lw",
+                  "name": "Feral Claws",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7tw",
+                  "name": "Runic Talons",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7qr",
+                  "name": "Scissors Suwayyah",
                   "type": "checkbox"
                 }
               ]
