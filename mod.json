@@ -320,6 +320,64 @@
               ]
             },
             {
+              "id": "normalHelm",
+              "name": "Helm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_cap",
+                  "name": "Cap",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_skp",
+                  "name": "Skull Cap",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hlm",
+                  "name": "Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_fhl",
+                  "name": "Full Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ghm",
+                  "name": "Great Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_msk",
+                  "name": "Mask",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_crn",
+                  "name": "Crown",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bhm",
+                  "name": "Bone Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ci0",
+                  "name": "Circlet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ci1",
+                  "name": "Coronet",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalKatar",
               "name": "Katar",
               "type": "section",
@@ -454,6 +512,59 @@
               ]
             },
             {
+              "id": "exceptionalHelm",
+              "name": "Helm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_xap",
+                  "name": "War Hat",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xkp",
+                  "name": "Sallet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xlm",
+                  "name": "Casque",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xhl",
+                  "name": "Basinet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xhm",
+                  "name": "Winged Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xsk",
+                  "name": "Death Mask",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xrn",
+                  "name": "Grand Crown",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xh9",
+                  "name": "Grim Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ci2",
+                  "name": "Tiara",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalKatar",
               "name": "Katar",
               "type": "section",
@@ -583,6 +694,59 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteHelm",
+              "name": "Helm",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_uap",
+                  "name": "Shako",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ukp",
+                  "name": "Hydraskull",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ulm",
+                  "name": "Armet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uhl",
+                  "name": "Giant Conch",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uhm",
+                  "name": "Spired Helm",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_usk",
+                  "name": "Demonhead",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_urn",
+                  "name": "Corona",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uh9",
+                  "name": "Bone Visage",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ci3",
+                  "name": "Diadem",
                   "type": "checkbox"
                 }
               ]
