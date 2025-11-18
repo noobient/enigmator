@@ -538,6 +538,34 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "normalWand",
+              "name": "Wand",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_wnd",
+                  "name": "Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ywn",
+                  "name": "Yew Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bwn",
+                  "name": "Bone Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gwn",
+                  "name": "Grim Wand",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -844,6 +872,34 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "exceptionalWand",
+              "name": "Wand",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9wn",
+                  "name": "Burnt Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9yw",
+                  "name": "Petrified Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9bw",
+                  "name": "Tomb Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9gw",
+                  "name": "Grave Wand",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -1147,6 +1203,34 @@
                 {
                   "id": "bth_7p7",
                   "name": "War Pike",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteWand",
+              "name": "Wand",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7wn",
+                  "name": "Polished Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7yw",
+                  "name": "Ghost Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7bw",
+                  "name": "Lich Wand",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7gw",
+                  "name": "Unearthed Wand",
                   "type": "checkbox"
                 }
               ]
