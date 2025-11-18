@@ -419,6 +419,54 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "normalShield",
+              "name": "Shield",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_buc",
+                  "name": "Buckler",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_sml",
+                  "name": "Small Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lrg",
+                  "name": "Large Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_kit",
+                  "name": "Kite Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_spk",
+                  "name": "Spiked Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tow",
+                  "name": "Tower Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bsh",
+                  "name": "Bone Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gts",
+                  "name": "Gothic Shield",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -606,6 +654,54 @@
                   "type": "checkbox"
                 }
               ]
+            },
+            {
+              "id": "exceptionalShield",
+              "name": "Shield",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_xuc",
+                  "name": "Defender",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xml",
+                  "name": "Round Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xrg",
+                  "name": "Scutum",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xpk",
+                  "name": "Barbed Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xit",
+                  "name": "Dragon Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xsh",
+                  "name": "Grim Shield",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xow",
+                  "name": "Pavise",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xts",
+                  "name": "Ancient Shield",
+                  "type": "checkbox"
+                }
+              ]
             }
           ]
         },
@@ -790,6 +886,54 @@
                 {
                   "id": "bth_7qr",
                   "name": "Scissors Suwayyah",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteShield",
+              "name": "Shield",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_uuc",
+                  "name": "Heater",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uml",
+                  "name": "Luna",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_urg",
+                  "name": "Hyperion",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uit",
+                  "name": "Monarch",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_upk",
+                  "name": "Blade Barrier",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uow",
+                  "name": "Aegis",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ush",
+                  "name": "Troll Nest",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uts",
+                  "name": "Ward",
                   "type": "checkbox"
                 }
               ]
