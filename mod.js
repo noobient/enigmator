@@ -2,6 +2,21 @@
 const itemNamesFilename = 'local\\lng\\strings\\item-names.json';
 const itemNames = D2RMM.readJson(itemNamesFilename);
 
+function addLightBeam(jsonFile) {
+    // Read the JSON file
+    var itemJson = D2RMM.readJson(jsonFile);
+
+    // Extend the JSON with the light beam stuff
+    itemJson.dependencies.particles.push(lightBeamParticleJson);
+
+    for(var i in lightBeamEntityJson) {
+        itemJson.entities.push(lightBeamEntityJson[i]);
+    }
+
+    // Write the JSON file
+    D2RMM.writeJson(jsonFile, itemJson);
+}
+
 itemNames.forEach((item) => {
   const itemtype = item.Key;
   let newName = null;
@@ -310,18 +325,8 @@ itemRunes.forEach((item) => {
     // Get the string "Pul Rune", get the first word, convert to lowercase, append the rest
     const runeFile = runesDir + "\\" + item.enUS.split(" ")[0].toLowerCase() + "_rune.json";
 
-    // Read the rune JSON file
-    var runeJson = D2RMM.readJson(runeFile);
-
-    // Extend the JSON with the light beam stuff
-    runeJson.dependencies.particles.push(lightBeamParticleJson);
-
-    for(var i in lightBeamEntityJson) {
-        runeJson.entities.push(lightBeamEntityJson[i]);
-    }
-
-    // Write the rune file
-    D2RMM.writeJson(runeFile, runeJson);
+    // Apply the lightbeam
+    addLightBeam(runeFile);
   }
 
   switch(itemtype) {
