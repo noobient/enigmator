@@ -751,6 +751,29 @@
               ]
             },
             {
+              "id": "normalScepter",
+              "name": "Scepter",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_scp",
+                  "name": "Scepter",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gsc",
+                  "name": "Grand Scepter",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_wsp",
+                  "name": "War Scepter",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalShield",
               "name": "Shield",
               "type": "section",
@@ -1438,6 +1461,29 @@
               ]
             },
             {
+              "id": "exceptionalScepter",
+              "name": "Scepter",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9sc",
+                  "name": "Rune Scepter",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9qs",
+                  "name": "Holy Water Sprinkler",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ws",
+                  "name": "Divine Scepter",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalShield",
               "name": "Shield",
               "type": "section",
@@ -2120,6 +2166,29 @@
                 {
                   "id": "bth_7wc",
                   "name": "Giant Thresher",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteScepter",
+              "name": "Scepter",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7sc",
+                  "name": "Mighty Scepter",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7qs",
+                  "name": "Seraph Rod",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ws",
+                  "name": "Caduceus",
                   "type": "checkbox"
                 }
               ]
