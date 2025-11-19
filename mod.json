@@ -600,7 +600,7 @@
             },
             {
               "id": "normalJavelin",
-              "name": "",
+              "name": "Javelin",
               "type": "section",
               "defaultExpanded": false,
               "children": [
@@ -1404,7 +1404,7 @@
             },
             {
               "id": "exceptionalJavelin",
-              "name": "",
+              "name": "Javelin",
               "type": "section",
               "defaultExpanded": false,
               "children": [
@@ -2208,7 +2208,7 @@
             },
             {
               "id": "eliteJavelin",
-              "name": "",
+              "name": "Javelin",
               "type": "section",
               "defaultExpanded": false,
               "children": [
