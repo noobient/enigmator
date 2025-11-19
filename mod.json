@@ -320,6 +320,39 @@
               ]
             },
             {
+              "id": "normalBelt",
+              "name": "Belt",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_lbl",
+                  "name": "Sash",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_vbl",
+                  "name": "Light Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mbl",
+                  "name": "Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tbl",
+                  "name": "Heavy Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hbl",
+                  "name": "Plated Belt",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalBoot",
               "name": "Boot",
               "type": "section",
@@ -791,6 +824,39 @@
               ]
             },
             {
+              "id": "exceptionalBelt",
+              "name": "Belt",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_zlb",
+                  "name": "Demonhide Sash",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_zvb",
+                  "name": "Sharkskin Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_zmb",
+                  "name": "Mesh Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ztb",
+                  "name": "Battle Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_zhb",
+                  "name": "War Belt",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalBoot",
               "name": "Boot",
               "type": "section",
@@ -1252,6 +1318,39 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteBelt",
+              "name": "Belt",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ulc",
+                  "name": "Spiderweb Sash",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uvc",
+                  "name": "Vampirefang Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_umc",
+                  "name": "Mithril Coil",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_utc",
+                  "name": "Troll Belt",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uhc",
+                  "name": "Colossus Girdle",
                   "type": "checkbox"
                 }
               ]
