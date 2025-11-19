@@ -227,7 +227,7 @@
     {
       "id": "highlightBases",
       "name": "Highlight Bases",
-      "description": "Option to highlight desirable bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
+      "description": "Option to highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
       "type": "section",
       "children": [
         {
