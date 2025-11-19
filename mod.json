@@ -353,6 +353,64 @@
               ]
             },
             {
+              "id": "normalAxe",
+              "name": "Axe",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_hax",
+                  "name": "Hand Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_axe",
+                  "name": "Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_2ax",
+                  "name": "Double Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mpi",
+                  "name": "Military Pick",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_wax",
+                  "name": "War Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lax",
+                  "name": "Large Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bax",
+                  "name": "Broad Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_btx",
+                  "name": "Battle Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gax",
+                  "name": "Great Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gix",
+                  "name": "Giant Axe",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalBarbarianHelm",
               "name": "Barbarian Helm",
               "type": "section",
@@ -1240,6 +1298,64 @@
               ]
             },
             {
+              "id": "exceptionalAxe",
+              "name": "Axe",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9ha",
+                  "name": "Hatchet",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ax",
+                  "name": "Cleaver",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_92a",
+                  "name": "Twin Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9mp",
+                  "name": "Crowbill",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9wa",
+                  "name": "Naga",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9la",
+                  "name": "Military Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ba",
+                  "name": "Bearded Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9bt",
+                  "name": "Tabar",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ga",
+                  "name": "Gothic Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9gi",
+                  "name": "Ancient Axe",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalBarbarianHelm",
               "name": "Barbarian Helm",
               "type": "section",
@@ -2117,6 +2233,64 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteAxe",
+              "name": "Axe",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7ha",
+                  "name": "Tomahawk",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ax",
+                  "name": "Small Crescent",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_72a",
+                  "name": "Ettin Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7mp",
+                  "name": "War Spike",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7wa",
+                  "name": "Berserker Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7la",
+                  "name": "Feral Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ba",
+                  "name": "Silver-Edged Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7bt",
+                  "name": "Decapitator",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ga",
+                  "name": "Champion Axe",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7gi",
+                  "name": "Glorious Axe",
                   "type": "checkbox"
                 }
               ]
