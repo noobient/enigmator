@@ -6,9 +6,9 @@
 	"version":"1.0",
 	"config":[
 		{
-			"id":"illuminateRunes",
-			"name":"Illuminate Runes",
-			"description":"Illuminate runes when dropped.",
+			"id":"lightbeamRunes",
+			"name":"Light Beam on Runes",
+			"description":"Apply a light beam effect on rune drops.",
 			"type":"section",
 			"children":[
 				{
@@ -227,7 +227,7 @@
 		{
 			"id":"highlightBases",
 			"name":"Highlight Bases",
-			"description":"Option to highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, and unique items.",
+			"description":"Highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, unique, and crafted items.",
 			"type":"section",
 			"children":[
 				{
