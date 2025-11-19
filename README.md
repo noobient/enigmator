@@ -1,1 +1,1 @@
-Loot Filter for Diablo II: Resurrected based on [Practical Item Filter](https://www.nexusmods.com/diablo2resurrected/mods/317) by North Dakota
+[Item highlighter for Diablo II: Resurrected - Never miss a drop again!](https://noobient.com/enigmator/)
