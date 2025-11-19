@@ -982,6 +982,84 @@
               ]
             },
             {
+              "id": "normalSword",
+              "name": "Sword",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ssd",
+                  "name": "Short Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_scm",
+                  "name": "Scimitar",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_sbr",
+                  "name": "Sabre",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_flc",
+                  "name": "Falchion",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_crs",
+                  "name": "Crystal Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bsd",
+                  "name": "Broad Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lsd",
+                  "name": "Long Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_wsd",
+                  "name": "War Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_2hs",
+                  "name": "Two-handed Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_clm",
+                  "name": "Claymore",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gis",
+                  "name": "Giant Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bsw",
+                  "name": "Bastard Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_flb",
+                  "name": "Flamberge",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_gsd",
+                  "name": "Great Sword",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalThrowing",
               "name": "Throwing",
               "type": "section",
@@ -1786,6 +1864,84 @@
               ]
             },
             {
+              "id": "exceptionalSword",
+              "name": "Sword",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9ss",
+                  "name": "Gladius",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9sm",
+                  "name": "Cutlass",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9sb",
+                  "name": "Shamshir",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9fc",
+                  "name": "Tulwar",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9cr",
+                  "name": "Dimensional Blade",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9bs",
+                  "name": "Battle Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9ls",
+                  "name": "Rune Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9wd",
+                  "name": "Ancient Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_92h",
+                  "name": "Espandon",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9cm",
+                  "name": "Dacian Falx",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9gs",
+                  "name": "Tusk Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9b9",
+                  "name": "Gothic Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9fb",
+                  "name": "Zweihander",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9gd",
+                  "name": "Executioner Sword",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalThrowing",
               "name": "Throwing",
               "type": "section",
@@ -2585,6 +2741,84 @@
                 {
                   "id": "bth_6ws",
                   "name": "Archon Staff",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteSword",
+              "name": "Sword",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7ss",
+                  "name": "Falcata",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7sm",
+                  "name": "Ataghan",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7sb",
+                  "name": "Elegant Blade",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7fc",
+                  "name": "Hydra Edge",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7cr",
+                  "name": "Phase Blade",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7bs",
+                  "name": "Conquest Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7ls",
+                  "name": "Cryptic Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7wd",
+                  "name": "Mythical Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_72h",
+                  "name": "Legend Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7cm",
+                  "name": "Highland Blade",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7gs",
+                  "name": "Balrog Blade",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7b7",
+                  "name": "Champion Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7fb",
+                  "name": "Colossus Sword",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7gd",
+                  "name": "Colossus Blade",
                   "type": "checkbox"
                 }
               ]
