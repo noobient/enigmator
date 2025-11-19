@@ -452,6 +452,34 @@
               ]
             },
             {
+              "id": "normalCrossbow",
+              "name": "Crossbow",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_lxb",
+                  "name": "Light Crossbow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mxb",
+                  "name": "Crossbow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hxb",
+                  "name": "Heavy Crossbow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_rxb",
+                  "name": "Repeating Crossbow",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalGlove",
               "name": "Glove",
               "type": "section",
@@ -1088,6 +1116,34 @@
               ]
             },
             {
+              "id": "exceptionalCrossbow",
+              "name": "Crossbow",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_8lx",
+                  "name": "Arbalest",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8mx",
+                  "name": "Siege Crossbow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8hx",
+                  "name": "Ballista",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8rx",
+                  "name": "Chu-Ko-Nu",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalGlove",
               "name": "Glove",
               "type": "section",
@@ -1714,6 +1770,34 @@
                 {
                   "id": "bth_uhb",
                   "name": "Myrmidon Greaves",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteCrossbow",
+              "name": "Crossbow",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_6lx",
+                  "name": "Pellet Bow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6mx",
+                  "name": "Gorgon Crossbow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6hx",
+                  "name": "Colossus Crossbow",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6rx",
+                  "name": "Demon Crossbow",
                   "type": "checkbox"
                 }
               ]
