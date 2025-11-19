@@ -480,6 +480,34 @@
               ]
             },
             {
+              "id": "normalDagger",
+              "name": "Dagger",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_dgr",
+                  "name": "Dagger",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_dir",
+                  "name": "Dirk",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_kri",
+                  "name": "Kris",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bld",
+                  "name": "Blade",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalGlove",
               "name": "Glove",
               "type": "section",
@@ -1195,6 +1223,34 @@
               ]
             },
             {
+              "id": "exceptionalDagger",
+              "name": "Dagger",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_9dg",
+                  "name": "Poignard",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9di",
+                  "name": "Rondel",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9kr",
+                  "name": "Cinquedeas",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_9bl",
+                  "name": "Stiletto",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalGlove",
               "name": "Glove",
               "type": "section",
@@ -1900,6 +1956,34 @@
                 {
                   "id": "bth_6rx",
                   "name": "Demon Crossbow",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteDagger",
+              "name": "Dagger",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_7dg",
+                  "name": "Bone Knife",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7di",
+                  "name": "Mithril Point",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7kr",
+                  "name": "Fanged Knife",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_7bl",
+                  "name": "Legend Spike",
                   "type": "checkbox"
                 }
               ]
