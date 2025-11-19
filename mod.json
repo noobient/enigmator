@@ -916,6 +916,39 @@
               ]
             },
             {
+              "id": "normalStaff",
+              "name": "Staff",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_sst",
+                  "name": "Short Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_lst",
+                  "name": "Long Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_cst",
+                  "name": "Gnarled Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_bst",
+                  "name": "Battle Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_wst",
+                  "name": "War Staff",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalThrowing",
               "name": "Throwing",
               "type": "section",
@@ -1654,6 +1687,39 @@
               ]
             },
             {
+              "id": "exceptionalStaff",
+              "name": "Staff",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_8ss",
+                  "name": "Jo Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8ls",
+                  "name": "Quarterstaff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8cs",
+                  "name": "Cedar Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8bs",
+                  "name": "Gothic Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_8ws",
+                  "name": "Rune Staff",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalThrowing",
               "name": "Throwing",
               "type": "section",
@@ -2387,6 +2453,39 @@
                 {
                   "id": "bth_7p7",
                   "name": "War Pike",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteStaff",
+              "name": "Staff",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_6ss",
+                  "name": "Walking Stick",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6ls",
+                  "name": "Stalagmite",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6cs",
+                  "name": "Elder Staff",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6bs",
+                  "name": "Shillelagh",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_6ws",
+                  "name": "Archon Staff",
                   "type": "checkbox"
                 }
               ]
