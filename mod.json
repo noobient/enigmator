@@ -738,6 +738,39 @@
               ]
             },
             {
+              "id": "normalShrunkenHead",
+              "name": "Shrunken Head",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ne1",
+                  "name": "Preserved Head",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne2",
+                  "name": "Zombie Head",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne3",
+                  "name": "Unraveller Head",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne4",
+                  "name": "Gargoyle Head",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne5",
+                  "name": "Demon Head",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalSpear",
               "name": "Spear",
               "type": "section",
@@ -1303,6 +1336,39 @@
               ]
             },
             {
+              "id": "exceptionalShrunkenHead",
+              "name": "Shrunken Head",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ne6",
+                  "name": "Mummified Trophy",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne7",
+                  "name": "Fetish Trophy",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne8",
+                  "name": "Sexton Trophy",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ne9",
+                  "name": "Cantor Trophy",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_nea",
+                  "name": "Hierophant Trophy",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalSpear",
               "name": "Spear",
               "type": "section",
@@ -1863,6 +1929,39 @@
                 {
                   "id": "bth_uts",
                   "name": "Ward",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteShrunkenHead",
+              "name": "Shrunken Head",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_neb",
+                  "name": "Minion Skull",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_nec",
+                  "name": "Hellspawn Skull",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_ned",
+                  "name": "Overseer Skull",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_nee",
+                  "name": "Succubus Skull",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_nef",
+                  "name": "Bloodlord Skull",
                   "type": "checkbox"
                 }
               ]
