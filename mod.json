@@ -320,6 +320,39 @@
               ]
             },
             {
+              "id": "normalGlove",
+              "name": "Glove",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_lgl",
+                  "name": "Leather Gloves",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_vgl",
+                  "name": "Heavy Gloves",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mgl",
+                  "name": "Chain Gloves",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tgl",
+                  "name": "Light Gauntlets",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hgl",
+                  "name": "Gauntlets",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalHelm",
               "name": "Helm",
               "type": "section",
@@ -725,6 +758,39 @@
               ]
             },
             {
+              "id": "exceptionalGlove",
+              "name": "Glove",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_xlg",
+                  "name": "Demonhide Gloves",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xvg",
+                  "name": "Sharkskin Gloves",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xmg",
+                  "name": "Heavy Bracers",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xtg",
+                  "name": "Battle Gauntlets",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xhg",
+                  "name": "War Gauntlets",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalHelm",
               "name": "Helm",
               "type": "section",
@@ -1120,6 +1186,39 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteGlove",
+              "name": "Glove",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ulg",
+                  "name": "Bramble Mitts",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uvg",
+                  "name": "Vampirebone Gloves",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_umg",
+                  "name": "Vambraces",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_utg",
+                  "name": "Crusader Gauntlets",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uhg",
+                  "name": "Ogre Gauntlets",
                   "type": "checkbox"
                 }
               ]
