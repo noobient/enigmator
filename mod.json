@@ -2245,23 +2245,23 @@
               "defaultExpanded": false,
               "children": [
                 {
-                  "id": "bth_",
-                  "name": "",
+                  "id": "bth_7tk",
+                  "name": "Flying Knife",
                   "type": "checkbox"
                 },
                 {
-                  "id": "bth_",
-                  "name": "",
+                  "id": "bth_7bk",
+                  "name": "Winged Knife",
                   "type": "checkbox"
                 },
                 {
-                  "id": "bth_",
-                  "name": "",
+                  "id": "bth_7ta",
+                  "name": "Flying Axe",
                   "type": "checkbox"
                 },
                 {
-                  "id": "bth_",
-                  "name": "",
+                  "id": "bth_7b8",
+                  "name": "Winged Axe",
                   "type": "checkbox"
                 }
               ]
