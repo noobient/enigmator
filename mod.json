@@ -320,6 +320,39 @@
               ]
             },
             {
+              "id": "normalBoot",
+              "name": "Boot",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_lbt",
+                  "name": "Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_vbt",
+                  "name": "Heavy Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_mbt",
+                  "name": "Chain Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_tbt",
+                  "name": "Light Plated Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_hbt",
+                  "name": "Greaves",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "normalGlove",
               "name": "Glove",
               "type": "section",
@@ -758,6 +791,39 @@
               ]
             },
             {
+              "id": "exceptionalBoot",
+              "name": "Boot",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_xlb",
+                  "name": "Demonhide Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xvb",
+                  "name": "Sharkskin Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xmb",
+                  "name": "Mesh Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xtb",
+                  "name": "Battle Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_xhb",
+                  "name": "War Boots",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
               "id": "exceptionalGlove",
               "name": "Glove",
               "type": "section",
@@ -1186,6 +1252,39 @@
                 {
                   "id": "bth_uar",
                   "name": "Sacred Armor",
+                  "type": "checkbox"
+                }
+              ]
+            },
+            {
+              "id": "eliteBoot",
+              "name": "Boot",
+              "type": "section",
+              "defaultExpanded": false,
+              "children": [
+                {
+                  "id": "bth_ulb",
+                  "name": "Wyrmhide Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uvb",
+                  "name": "Scarabshell Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_umb",
+                  "name": "Boneweave Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_utb",
+                  "name": "Mirrored Boots",
+                  "type": "checkbox"
+                },
+                {
+                  "id": "bth_uhb",
+                  "name": "Myrmidon Greaves",
                   "type": "checkbox"
                 }
               ]
