@@ -261,8 +261,10 @@ function highlightGems(jsonFile)
 			// Make sure this is done *before* renaming the item, otherwise the path will be corrupted
 			if (Object.hasOwn(config, "lbg_" + item.Key) && config["lbg_" + item.Key])
 			{
-				// Get the string "Flawed Amethyst", replace space with underscore, and convert to lowercase
-				const gemFile = gemsDir + "\\" + item.enUS.replace(" ", "_").toLowerCase() + ".json";
+				// Get the string "Flawed Amethyst", replace space with underscore, and convert to lowercase.
+				// Also replace "sapphire" with "saphire", because someone at Blizzard had dysgraphia and put
+				// "saphire" in the filenames, and they also had the courtesy to leave it like that ever since.
+				const gemFile = gemsDir + "\\" + item.enUS.replace(" ", "_").toLowerCase().replace("sapphire", "saphire") + ".json";
 
 				// Apply the light beam
 				addLightBeam(gemFile);
