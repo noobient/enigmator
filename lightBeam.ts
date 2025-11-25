@@ -154,10 +154,12 @@ export function addLightBeam(jsonFile: string): void
 	var itemJson = D2RMM.readJson(jsonFile);
 
 	// Extend the JSON with the light beam stuff
+	// @ts-ignore
 	itemJson.dependencies.particles.push(lightBeamParticleJson);
 
 	for (var i in lightBeamEntityJson)
 	{
+		// @ts-ignore
 		itemJson.entities.push(lightBeamEntityJson[i]); 
 	}
 
