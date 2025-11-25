@@ -1,4 +1,5 @@
 import { addLightBeam } from "./lightBeam";
+import { addAssassinChargesHUD } from "./assassinCharges";
 
 const langJsonDir = "local\\lng\\strings";
 
@@ -308,3 +309,6 @@ profileHD.TooltipStyle.backgroundColor = [0, 0, 0, 0.9],
 // @ts-ignore
 profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1, 0.1, 0.2, 1],
 D2RMM.writeJson(profileHDFilename, profileHD);
+
+// Assassin charges HUD
+addAssassinChargesHUD();
