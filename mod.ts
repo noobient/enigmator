@@ -2,7 +2,7 @@ import { addLightBeam } from "./lightBeam";
 
 const langJsonDir = "local\\lng\\strings";
 
-function highlightGems(jsonFile)
+function highlightGems(jsonFile: string)
 {
 	const jsonFilePath = langJsonDir + "\\" + jsonFile + ".json";
 	const gemsDir = "hd\\items\\misc\\gem";
@@ -300,8 +300,11 @@ D2RMM.writeJson(itemRunesFilename, itemRunes);
 //change on-ground tooltip style to be slightly smaller and less see-through
 const profileHDFilename = 'global\\ui\\layouts\\_profilehd.json';
 const profileHD = D2RMM.readJson(profileHDFilename);
+// @ts-ignore
 profileHD.TooltipStyle.inGameBackgroundColor = [0, 0, 0, 0.85],
+// @ts-ignore
 profileHD.TooltipStyle.backgroundColor = [0, 0, 0, 0.9],
 //profileHD.TooltipFontSize = 32,
+// @ts-ignore
 profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1, 0.1, 0.2, 1],
 D2RMM.writeJson(profileHDFilename, profileHD);
