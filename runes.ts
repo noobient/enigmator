@@ -3,7 +3,7 @@ import { addLightBeam } from "./lightBeam";
 export function highlightRunes(jsonData: JSONData, runesDir: string): void
 {
 	// @ts-ignore
-	itemRunesJson.forEach((item: any) =>
+	jsonData.forEach((item: any) =>
 	{
 		const runeName = item.Key;
 		let newName = null;
