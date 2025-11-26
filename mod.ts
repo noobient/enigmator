@@ -95,7 +95,7 @@ function highlightGems(jsonFile: string)
 		if (gemColor != null && item.Key.length == 3)
 		{
 			// Make sure this is done *before* renaming the item, otherwise the path will be corrupted
-			if (Object.hasOwn(config, "lbg_" + item.Key) && config["lbg_" + item.Key])
+			if (config["lbg_" + item.Key])
 			{
 				// Get the string "Flawed Amethyst", replace space with underscore, and convert to lowercase.
 				// Also replace "sapphire" with "saphire", because someone at Blizzard had dysgraphia and put
@@ -141,7 +141,7 @@ itemNames.forEach((item) =>
 	let newName = null;
 
 	// Highlight base item if set to be highlighted, but first check if it actually exists in the config
-	if (Object.hasOwn(config, "bth_" + itemtype) && config["bth_" + itemtype])
+	if (config["bth_" + itemtype])
 	{
 		newName = item.enUS + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
 	}
@@ -226,7 +226,7 @@ itemRunes.forEach((item) =>
 	const itemtype = item.Key;
 	let newName = null;
 
-	if (Object.hasOwn(config, "lbr_" + itemtype) && config["lbr_" + itemtype])
+	if (config["lbr_" + itemtype])
 	{
 		// Get the string "Pul Rune", get the first word, convert to lowercase, append the rest
 		const runeFile = runesDir + "\\" + item.enUS.split(" ")[0].toLowerCase() + "_rune.json";
@@ -313,12 +313,12 @@ profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1, 0.1, 0.2, 
 D2RMM.writeJson(profileHDFilename, profileHD);
 
 // Assassin charges HUD
-if (Object.hasOwn(config, "ach_enable") && config["ach_enable"])
+if (config["ach_enable"])
 {
 	addAssassinChargesHUD();
 }
 
-if (Object.hasOwn(config, "misc_skipintro") && config["misc_skipintro"])
+if (config["misc_skipintro"])
 {
 	D2RMM.copyFile("hd\\global\\video", "hd\\global\\video", true);
 }

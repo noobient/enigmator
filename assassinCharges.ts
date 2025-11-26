@@ -96,7 +96,7 @@ for (var i = 0; i < chargeTypes.length; i++)
 chargeTypes.sort(sortCharges);
 
 // Sprite positioning
-if (Object.hasOwn(config, "ach_ypos") && config["ach_ypos"])
+if (config["ach_ypos"])
 {
 	const yValue = config["ach_ypos"];
 }
