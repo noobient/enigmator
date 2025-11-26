@@ -3820,11 +3820,34 @@
 		{
 			"id":"ift",
 			"name":"Item Filtering",
+			"description":"Suppress various item names in drops / trading windows by replacing their names with the \"\" empty string. BIG FAT WARNING: the \"filtered\" item in reality isn't filtered, just renamed, so the item still counts toward the item display limit of 32, applied to all drops at any given time. Therefore, this does NOT let you see more items on the floor, it only makes reading through item names more easy. This in turn might make you assume you're not missing a drop due to little text on the screen, while in reality you might be. Please refer to the mod website at noobient.com/enigmator for more details.",
 			"type":"section",
 			"children":[
 				{
 					"id":"ift_gold",
-					"name":"Hide 'gold' caption in gold drops",
+					"name":"Gold",
+					"description":"Hide the 'gold' caption in gold drops. The amount remains visible.",
+					"type":"checkbox"
+				},
+				{
+					"id":"ift_scroll",
+					"name":"Scrolls",
+					"type":"checkbox"
+				},
+				{
+					"id":"ift_potion",
+					"name":"Most Potions",
+					"description":"Hide all potions except super healing / super mana / full rejuvenation potions. Those have separate options to hide / highlight.",
+					"type":"checkbox"
+				},
+				{
+					"id":"ift_superhealing",
+					"name":"Super Healing Potion",
+					"type":"checkbox"
+				},
+				{
+					"id":"ift_supermana",
+					"name":"Super Mana Potion",
 					"type":"checkbox"
 				}
 			]
