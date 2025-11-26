@@ -146,13 +146,14 @@ itemNames.forEach((item) =>
 		newName = item.enUS + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
 	}
 
-	if (itemtype == "rvl" && config["ihl_fullrejuv"])
-	{
-		newName = `ÿc;100% ÿc0Rejuvenation Potion`;
-	}
-
 	switch (itemtype)
 	{
+		case "rvl": // Full Rejuvenation Potion
+			if (config["ihl_fullrejuv"])
+			{
+				newName = `ÿc;100% ÿc0Rejuvenation Potion`;
+			}
+			break;
 		case "cm1": // Small Charm
 			newName = item.enUS + ` ÿc5[ÿc:•ÿc5]`;
 			break;
