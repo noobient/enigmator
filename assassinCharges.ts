@@ -91,7 +91,7 @@ for (var i = 0; i < chargeTypes.length; i++)
 	}
 }
 
-if(config["misc_debug"])
+if (config["misc_debug"])
 {
 	printChargeOrder();
 }
@@ -99,7 +99,7 @@ if(config["misc_debug"])
 // Reorder the charges array accordingly
 chargeTypes.sort(sortCharges);
 
-if(config["misc_debug"])
+if (config["misc_debug"])
 {
 	printChargeOrder();
 }

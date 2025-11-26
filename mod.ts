@@ -2,7 +2,7 @@ import { addAssassinChargesHUD } from "./assassinCharges";
 import { highlightGems } from "./gems";
 import { highlightRunes } from "./runes";
 
-if(config["misc_debug"])
+if (config["misc_debug"])
 {
 	// @ts-ignore
 	const timeStart = new Date().getTime();
@@ -16,8 +16,8 @@ const runesDir = "hd\\items\\misc\\rune";
 // File paths
 const itemNamesFile = stringsDir + "\\item-names.json";
 const itemNameAffixesFile = stringsDir + "\\item-nameaffixes.json";
-const itemRunesFile = 'local\\lng\\strings\\item-runes.json';
-//const profileHDFile = 'global\\ui\\layouts\\_profilehd.json';
+const itemRunesFile = stringsDir + "\\item-runes.json";
+//const profileHDFile = "global\\ui\\layouts\\_profilehd.json";
 
 // Read the files we'll unconditionally iterate over regardless of settings
 var itemNamesJson = D2RMM.readJson(itemNamesFile);
@@ -78,19 +78,19 @@ itemNamesJson.forEach((item: any) =>
 		case "vps": // Stamina Potion
 		case "wms": // Thawing Potion
 		case "yps": // Antidote Potion
-			if(config["ift_potion"])
+			if (config["ift_potion"])
 			{
 				newName = "";
 			}
 			break;
 		case "hp5": // Super Healing Potion
-			if(config["ift_superhealing"])
+			if (config["ift_superhealing"])
 			{
 				newName = "";
 			}
 			break;
 		case "mp5": // Super Mana Potion
-			if(config["ift_supermana"])
+			if (config["ift_supermana"])
 			{
 				newName = "";
 			}
@@ -114,7 +114,7 @@ itemNamesJson.forEach((item: any) =>
 		// Update all localizations
 		for (let key in item)
 		{
-			if (key !== 'id' && key !== 'Key')
+			if (key !== "id" && key !== "Key")
 			{
 				item[key] = newName;
 			}
@@ -135,7 +135,7 @@ if (config["ift_gold"])
 			// Update all localizations
 			for (let key in item)
 			{
-				if (key !== 'id' && key !== 'Key')
+				if (key !== "id" && key !== "Key")
 				{
 					item[key] = "";
 				}
@@ -171,7 +171,7 @@ D2RMM.writeJson(itemNamesFile, itemNamesJson);
 D2RMM.writeJson(itemNameAffixesFile, itemNameAffixesJson);
 D2RMM.writeJson(itemRunesFile, itemRunesJson);
 
-if(config["misc_debug"])
+if (config["misc_debug"])
 {
 	const timeEnd = new Date().getTime();
 	// It thinks timeStart doesn't exist, whatever man
