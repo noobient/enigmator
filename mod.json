@@ -3804,6 +3804,12 @@
 			"type":"section",
 			"children":[
 				{
+					"id":"misc_skipintro",
+					"name":"Skip intro animations",
+					"type":"checkbox",
+					"defaultValue":true
+				},
+				{
 					"id":"misc_gold",
 					"name":"Hide 'gold' caption in gold drops",
 					"type":"checkbox"

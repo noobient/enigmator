@@ -315,3 +315,8 @@ if (Object.hasOwn(config, "ach_enable") && config["ach_enable"])
 {
 	addAssassinChargesHUD();
 }
+
+if (Object.hasOwn(config, "misc_skipintro") && config["misc_skipintro"])
+{
+	D2RMM.copyFile("hd\\global\\video", "hd\\global\\video", true);
+}
