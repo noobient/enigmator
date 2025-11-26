@@ -12,6 +12,7 @@ if (config["misc_debug"])
 
 // Dir paths
 const stringsDir = "local\\lng\\strings";
+const chargesDir = "hd\\overlays\\common";
 const gemsDir = "hd\\items\\misc\\gem";
 const runesDir = "hd\\items\\misc\\rune";
 
@@ -60,7 +61,7 @@ if (config["ift_gold"])
 // Assassin charges HUD
 if (config["ach_enable"])
 {
-	addAssassinChargesHUD();
+	addAssassinChargesHUD(chargesDir);
 }
 
 if (config["misc_skipintro"])

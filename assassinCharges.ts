@@ -27,8 +27,6 @@ const entityJson = {
 	]
 }
 
-const chargesJsonDir = "hd\\overlays\\common";
-
 // filename prefix
 // charge icon prefix
 // entity ID 1
@@ -121,7 +119,7 @@ var zValue = 148.0;
 // x and z coordinates are increased / decreased by this value per charge type
 const axisStep = 1.9;
 
-export function addAssassinChargesHUD(): void
+export function addAssassinChargesHUD(chargesDir: string): void
 {
 	// Generate the JSON files for 3 levels of 6 charge types 
 	for (var i = 0; i < chargeTypes.length; i++)
@@ -129,7 +127,7 @@ export function addAssassinChargesHUD(): void
 		for (var x = 1; x <= 3; x++)
 		{
 			// Construct the JSON file path
-			var chargeJsonFile = chargesJsonDir + "\\progressive_" + chargeTypes[i][0] + "_" + x + ".json";
+			var chargeJsonFile = chargesDir + "\\progressive_" + chargeTypes[i][0] + "_" + x + ".json";
 			// Read the JSON
 			var chargeJson = D2RMM.readJson(chargeJsonFile);
 			// Empty the textures node
