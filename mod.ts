@@ -123,7 +123,7 @@ function highlightGems(jsonFile: string)
 }
 
 // More vivid gem names
-if (Object.hasOwn(config, "misc_gemhl") && config["misc_gemhl"])
+if (config["ihl_gem"])
 {
 	highlightGems("item-names");
 	// For whatever braindamaged reason, the normal Sapphire, Emerald, Ruby and Diamond
@@ -146,11 +146,13 @@ itemNames.forEach((item) =>
 		newName = item.enUS + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
 	}
 
+	if (itemtype == "rvl" && config["ihl_fullrejuv"])
+	{
+		newName = `ÿc;100% ÿc0Rejuvenation Potion`;
+	}
+
 	switch (itemtype)
 	{
-		case "rvl": // Full Rejuvenation Potion
-			newName = `Full ÿc;Rejuvenationÿc0 Potion`;
-			break;
 		case "cm1": // Small Charm
 			newName = item.enUS + ` ÿc5[ÿc:•ÿc5]`;
 			break;
@@ -180,7 +182,7 @@ itemNames.forEach((item) =>
 D2RMM.writeJson(itemNamesFilename, itemNames);
 
 // Change gold item label on the ground
-if (Object.hasOwn(config, "misc_gold") && config["misc_gold"])
+if (config["ift_gold"])
 {
 	const itemNameAffixesFilename = 'local\\lng\\strings\\item-nameaffixes.json';
 	const itemNameAffixes = D2RMM.readJson(itemNameAffixesFilename);

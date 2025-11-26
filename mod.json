@@ -466,7 +466,7 @@
 		},
 		{
 			"id":"highlightBases",
-			"name":"Highlight Bases",
+			"name":"Base Highlighting",
 			"description":"Highlight desirable runeword / recipe bases with a colorful suffix. Due to technical limitations, this will also apply to magic, rare, unique, and crafted items.",
 			"type":"section",
 			"children":[
@@ -3799,6 +3799,37 @@
 			]
 		},
 		{
+			"id":"ihl",
+			"name":"Item Highlighting",
+			"type":"section",
+			"children":[
+				{
+					"id":"ihl_gem",
+					"name":"Gems",
+					"type":"checkbox",
+					"defaultValue":true
+				},
+				{
+					"id":"ihl_fullrejuv",
+					"name":"Full Rejuvenation Potions",
+					"type":"checkbox",
+					"defaultValue":true
+				}
+			]
+		},
+		{
+			"id":"ift",
+			"name":"Item Filtering",
+			"type":"section",
+			"children":[
+				{
+					"id":"ift_gold",
+					"name":"Hide 'gold' caption in gold drops",
+					"type":"checkbox"
+				}
+			]
+		},
+		{
 			"id":"misc",
 			"name":"Miscellaneous",
 			"type":"section",
@@ -3806,17 +3837,6 @@
 				{
 					"id":"misc_skipintro",
 					"name":"Skip intro animations",
-					"type":"checkbox",
-					"defaultValue":true
-				},
-				{
-					"id":"misc_gold",
-					"name":"Hide 'gold' caption in gold drops",
-					"type":"checkbox"
-				},
-				{
-					"id":"misc_gemhl",
-					"name":"More vivid gem names",
 					"type":"checkbox",
 					"defaultValue":true
 				}
