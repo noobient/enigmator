@@ -105,13 +105,15 @@ if(config["misc_debug"])
 }
 
 // Sprite positioning
+var yValue = 0.0;
+
 if (config["ach_ypos"])
 {
-	const yValue = config["ach_ypos"];
+	yValue = Number(config["ach_ypos"]);
 }
 else
 {
-	const yValue = 100.15;
+	yValue = 100.15;
 }
 
 var xValue = 155.0;
@@ -131,20 +133,29 @@ export function addAssassinChargesHUD(): void
 			// Read the JSON
 			var chargeJson = D2RMM.readJson(chargeJsonFile);
 			// Empty the textures node
+			// @ts-ignore
 			chargeJson.dependencies.textures = [];
 			// Update 1st entity ID, make sure to avoid quotes
+			// @ts-ignore
 			chargeJson.entities[0].id = Number(chargeTypes[i][2]);
 			// Ensure bool is actually bool instead of int, readJson() bug?
+			// @ts-ignore
 			chargeJson.entities[0].components[0].hardKillOnDestroy = Boolean(chargeJson.entities[0].components[0].hardKillOnDestroy);
 			// Add the entity JSON parts
+			// @ts-ignore
 			chargeJson.entities.push(entityJson);
 			// Fix 2nd entity ID, make sure to avoid quotes
+			// @ts-ignore
 			chargeJson.entities[1].id = Number(chargeTypes[i][x+2]);
 			// Fill 2nd entity filename
+			// @ts-ignore
 			chargeJson.entities[1].components[0].filename = "data/hd/vfx/particles/charge_icons/" + chargeTypes[i][1] + x + ".particles";
 			// Generate coordinates
+			// @ts-ignore
 			chargeJson.entities[1].components[1].position.x = xValue;
+			// @ts-ignore
 			chargeJson.entities[1].components[1].position.y = yValue;
+			// @ts-ignore
 			chargeJson.entities[1].components[1].position.z = zValue;
 			// Write the changes
 			D2RMM.writeJson(chargeJsonFile, chargeJson);
