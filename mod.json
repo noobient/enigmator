@@ -3862,6 +3862,12 @@
 					"name":"Skip intro animations",
 					"type":"checkbox",
 					"defaultValue":true
+				},
+				{
+					"id":"misc_debug",
+					"name":"Debug Mode",
+					"description":"You most likely don't need this.",
+					"type":"checkbox"
 				}
 			]
 		}

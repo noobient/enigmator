@@ -64,7 +64,6 @@ function sortCharges(a: string[], b: string[])
 }
 
 // Print charge order for debugging
-// @ts-ignore
 function printChargeOrder()
 {
 	var chargeOrder = "";
@@ -74,7 +73,7 @@ function printChargeOrder()
 		chargeOrder += i + 1 + ". " + chargeTypes[i][0] + " (" + (chargeTypes[i][1]) + ") ";
 	}
 
-	console.log(chargeOrder);
+	console.log("[DEBUG] Assassing Charges HUD order: " + chargeOrder);
 }
 
 // Apply icon order if set
@@ -92,8 +91,18 @@ for (var i = 0; i < chargeTypes.length; i++)
 	}
 }
 
+if(config["misc_debug"])
+{
+	printChargeOrder();
+}
+
 // Reorder the charges array accordingly
 chargeTypes.sort(sortCharges);
+
+if(config["misc_debug"])
+{
+	printChargeOrder();
+}
 
 // Sprite positioning
 if (config["ach_ypos"])

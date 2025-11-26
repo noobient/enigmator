@@ -1,6 +1,11 @@
 import { addLightBeam } from "./lightBeam";
 import { addAssassinChargesHUD } from "./assassinCharges";
 
+if(config["misc_debug"])
+{
+	const timeStart = new Date().getTime();
+}
+
 const langJsonDir = "local\\lng\\strings";
 
 function highlightGems(jsonFile: string)
@@ -364,4 +369,13 @@ if (config["ach_enable"])
 if (config["misc_skipintro"])
 {
 	D2RMM.copyFile("hd\\global\\video", "hd\\global\\video", true);
+}
+
+if(config["misc_debug"])
+{
+	const timeEnd = new Date().getTime();
+	// It thinks timeStart doesn't exist, whatever man
+	// @ts-ignore
+	const timeDuration = timeEnd - timeStart;
+	console.log("[DEBUG] Install took " + timeDuration / 1000 + " seconds");
 }
