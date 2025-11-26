@@ -1,4 +1,5 @@
 import { addAssassinChargesHUD } from "./assassinCharges";
+import { filterGold } from "./gold";
 import { highlightGems } from "./gems";
 import { highlightRunes } from "./runes";
 
@@ -127,21 +128,7 @@ itemNamesJson.forEach((item: any) =>
 // surprisingly it doesn't yield any performance benefit
 if (config["ift_gold"])
 {
-	// @ts-ignore
-	itemNameAffixesJson.forEach((item: any) =>
-	{
-		if (item.Key === "gld")
-		{
-			// Update all localizations
-			for (let key in item)
-			{
-				if (key !== "id" && key !== "Key")
-				{
-					item[key] = "";
-				}
-			}
-		}
-	});
+	filterGold(itemNameAffixesJson);
 }
 
 // Change on-ground tooltip style to be less see-through
