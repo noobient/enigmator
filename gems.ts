@@ -98,14 +98,17 @@ export function highlightGems(jsonData: JSONData, gemsDir: string): void
 				addLightBeam(gemFile);
 			}
 
-			newName = `ÿc7[` + gemColor + gemPrefix + `ÿc7] ÿc0` + item.enUS;
-
-			// Update all localizations
-			for (let key in item)
+			if (config["ihl_gem"])
 			{
-				if (key !== 'id' && key !== 'Key')
+				newName = `ÿc7[` + gemColor + gemPrefix + `ÿc7] ÿc0` + item.enUS;
+
+				// Update all localizations
+				for (let key in item)
 				{
-					item[key] = newName;
+					if (key !== 'id' && key !== 'Key')
+					{
+						item[key] = newName;
+					}
 				}
 			}
 		}

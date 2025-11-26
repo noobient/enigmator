@@ -25,13 +25,10 @@ var itemNameAffixesJson = D2RMM.readJson(itemNameAffixesFile);
 var itemRunesJson = D2RMM.readJson(itemRunesFile);
 
 // Gem highlighting
-if (config["ihl_gem"])
-{
-	highlightGems(itemNamesJson, gemsDir);
-	// For whatever braindamaged reason, the normal Sapphire, Emerald, Ruby and Diamond
-	// definitions are not in item-names, but in item-nameaffixes instead
-	highlightGems(itemNameAffixesJson, gemsDir);
-}
+highlightGems(itemNamesJson, gemsDir);
+// For whatever braindamaged reason, the normal Sapphire, Emerald, Ruby and Diamond
+// definitions are not in item-names, but in item-nameaffixes instead
+highlightGems(itemNameAffixesJson, gemsDir);
 
 // Rune highlighting
 highlightRunes(itemRunesJson, runesDir);
