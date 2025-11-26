@@ -227,7 +227,7 @@
 		{
 			"id":"lightbeamGems",
 			"name":"Light Beam on Gems",
-			"description":"Apply a light beam effect on gem drops.",
+			"description":"Apply a light beam effect on gem drops. It is most useful when you need a very specific gem for a recipe, e.g. you need a flawed ruby for crafting a Lem. But generally, you don't want to assume a HR drop for such items, so it is advised to only use temporarily to avoid getting your hopes up whenever you see the light beam :D",
 			"type":"section",
 			"defaultExpanded":false,
 			"children":[
@@ -3871,7 +3871,7 @@
 			"children":[
 				{
 					"id":"misc_skipintro",
-					"name":"Skip intro animations",
+					"name":"Skip Intro Animations",
 					"type":"checkbox",
 					"defaultValue":true
 				},
