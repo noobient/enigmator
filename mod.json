@@ -3598,11 +3598,203 @@
 				},
 				{
 					"id":"ach_ypos",
-					"name":"Y axis position",
+					"name":"Y Axis Position",
 					"description": "Sets the height of the overlay.",
 					"type":"number",
 					"defaultValue":100.15,
 					"minValue":0
+				},
+				{
+					"id":"ach_icon1",
+					"name":"1st Icon",
+					"type":"select",
+					"defaultValue": "other",
+					"options":[
+						{
+							"label": "Phoenix Strike",
+							"value": "other"
+						},
+						{
+							"label": "Blades of Ice",
+							"value": "cold"
+						},
+						{
+							"label": "Cobra Strike",
+							"value": "steal"
+						},
+						{
+							"label": "Claws of Thunder",
+							"value": "lightning"
+						},
+						{
+							"label": "Fists of Fire",
+							"value": "fire"
+						},
+						{
+							"label": "Tiger Strike",
+							"value": "damage"
+						}
+					]
+				},
+				{
+					"id":"ach_icon2",
+					"name":"2nd Icon",
+					"type":"select",
+					"defaultValue": "cold",
+					"options":[
+						{
+							"label": "Phoenix Strike",
+							"value": "other"
+						},
+						{
+							"label": "Blades of Ice",
+							"value": "cold"
+						},
+						{
+							"label": "Cobra Strike",
+							"value": "steal"
+						},
+						{
+							"label": "Claws of Thunder",
+							"value": "lightning"
+						},
+						{
+							"label": "Fists of Fire",
+							"value": "fire"
+						},
+						{
+							"label": "Tiger Strike",
+							"value": "damage"
+						}
+					]
+				},
+				{
+					"id":"ach_icon3",
+					"name":"3rd Icon",
+					"type":"select",
+					"defaultValue": "steal",
+					"options":[
+						{
+							"label": "Phoenix Strike",
+							"value": "other"
+						},
+						{
+							"label": "Blades of Ice",
+							"value": "cold"
+						},
+						{
+							"label": "Cobra Strike",
+							"value": "steal"
+						},
+						{
+							"label": "Claws of Thunder",
+							"value": "lightning"
+						},
+						{
+							"label": "Fists of Fire",
+							"value": "fire"
+						},
+						{
+							"label": "Tiger Strike",
+							"value": "damage"
+						}
+					]
+				},
+				{
+					"id":"ach_icon4",
+					"name":"4th Icon",
+					"type":"select",
+					"defaultValue": "lightning",
+					"options":[
+						{
+							"label": "Phoenix Strike",
+							"value": "other"
+						},
+						{
+							"label": "Blades of Ice",
+							"value": "cold"
+						},
+						{
+							"label": "Cobra Strike",
+							"value": "steal"
+						},
+						{
+							"label": "Claws of Thunder",
+							"value": "lightning"
+						},
+						{
+							"label": "Fists of Fire",
+							"value": "fire"
+						},
+						{
+							"label": "Tiger Strike",
+							"value": "damage"
+						}
+					]
+				},
+				{
+					"id":"ach_icon5",
+					"name":"5th Icon",
+					"type":"select",
+					"defaultValue": "fire",
+					"options":[
+						{
+							"label": "Phoenix Strike",
+							"value": "other"
+						},
+						{
+							"label": "Blades of Ice",
+							"value": "cold"
+						},
+						{
+							"label": "Cobra Strike",
+							"value": "steal"
+						},
+						{
+							"label": "Claws of Thunder",
+							"value": "lightning"
+						},
+						{
+							"label": "Fists of Fire",
+							"value": "fire"
+						},
+						{
+							"label": "Tiger Strike",
+							"value": "damage"
+						}
+					]
+				},
+				{
+					"id":"ach_icon6",
+					"name":"6th Icon",
+					"type":"select",
+					"defaultValue": "damage",
+					"options":[
+						{
+							"label": "Phoenix Strike",
+							"value": "other"
+						},
+						{
+							"label": "Blades of Ice",
+							"value": "cold"
+						},
+						{
+							"label": "Cobra Strike",
+							"value": "steal"
+						},
+						{
+							"label": "Claws of Thunder",
+							"value": "lightning"
+						},
+						{
+							"label": "Fists of Fire",
+							"value": "fire"
+						},
+						{
+							"label": "Tiger Strike",
+							"value": "damage"
+						}
+					]
 				}
 			]
 		},
