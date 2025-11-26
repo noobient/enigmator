@@ -3,20 +3,29 @@ import { addAssassinChargesHUD } from "./assassinCharges";
 
 if(config["misc_debug"])
 {
+	// @ts-ignore
 	const timeStart = new Date().getTime();
 }
 
-const langJsonDir = "local\\lng\\strings";
+// Dir paths
+const stringsDir = "local\\lng\\strings";
+const gemsDir = "hd\\items\\misc\\gem";
+const runesDir = "hd\\items\\misc\\rune";
 
-function highlightGems(jsonFile: string)
+// File paths
+const itemNamesFile = stringsDir + "\\item-names.json";
+const itemNameAffixesFile = stringsDir + "\\item-nameaffixes.json";
+const itemRunesFile = 'local\\lng\\strings\\item-runes.json';
+//const profileHDFile = 'global\\ui\\layouts\\_profilehd.json';
+
+// Read the files we'll unconditionally iterate over regardless of settings
+var itemNamesJson = D2RMM.readJson(itemNamesFile);
+var itemNameAffixesJson = D2RMM.readJson(itemNameAffixesFile);
+var itemRunesJson = D2RMM.readJson(itemRunesFile);
+
+function highlightGems(jsonData: JSONData)
 {
-	const jsonFilePath = langJsonDir + "\\" + jsonFile + ".json";
-	const gemsDir = "hd\\items\\misc\\gem";
-
-	// Parse the JSON holding the items
-	const itemJson = D2RMM.readJson(jsonFilePath);
-
-	itemJson.forEach((item) =>
+	jsonData.forEach((item) =>
 	{
 		let newName = null;
 		let gemPrefix = null;
@@ -114,7 +123,7 @@ function highlightGems(jsonFile: string)
 			newName = `ÿc7[` + gemColor + gemPrefix + `ÿc7] ÿc0` + item.enUS;
 
 			// Update all localizations
-			for (const key in item)
+			for (let key in item)
 			{
 				if (key !== 'id' && key !== 'Key')
 				{
@@ -123,35 +132,29 @@ function highlightGems(jsonFile: string)
 			}
 		}
 	});
-
-	D2RMM.writeJson(jsonFilePath, itemJson);
 }
 
 // More vivid gem names
 if (config["ihl_gem"])
 {
-	highlightGems("item-names");
+	highlightGems(itemNamesJson);
 	// For whatever braindamaged reason, the normal Sapphire, Emerald, Ruby and Diamond
 	// definitions are not in item-names, but in item-nameaffixes instead
-	highlightGems("item-nameaffixes");
+	highlightGems(itemNameAffixesJson);
 }
 
-//Change items in item-names.json (potions, scrolls, charms, jewels)
-const itemNamesFilename = 'local\\lng\\strings\\item-names.json';
-const itemNames = D2RMM.readJson(itemNamesFilename);
-
-itemNames.forEach((item) =>
+// General item highlighting / filtering
+itemNamesJson.forEach((item) =>
 {
-	const itemtype = item.Key;
 	let newName = null;
 
 	// Highlight base item if set to be highlighted, but first check if it actually exists in the config
-	if (config["bth_" + itemtype])
+	if (config["bth_" + item.Key])
 	{
 		newName = item.enUS + ` ÿc;*ÿc2*ÿc1* ÿc@Base ÿc;*ÿc2*ÿc1*`;
 	}
 
-	switch (itemtype)
+	switch (item.Key)
 	{
 		case "rvl": // Full Rejuvenation Potion
 			if (config["ihl_fullrejuv"])
@@ -217,8 +220,8 @@ itemNames.forEach((item) =>
 
 	if (newName != null)
 	{
-		// update all localizations
-		for (const key in item)
+		// Update all localizations
+		for (let key in item)
 		{
 			if (key !== 'id' && key !== 'Key')
 			{
@@ -227,54 +230,35 @@ itemNames.forEach((item) =>
 		}
 	}
 });
-D2RMM.writeJson(itemNamesFilename, itemNames);
 
 // Change gold item label on the ground
+// We could move this to gems to avoid iterating twice, but
+// surprisingly it doesn't yield any performance benefit
 if (config["ift_gold"])
 {
-	const itemNameAffixesFilename = 'local\\lng\\strings\\item-nameaffixes.json';
-	const itemNameAffixes = D2RMM.readJson(itemNameAffixesFilename);
-
-	itemNameAffixes.forEach((item) =>
+	itemNameAffixesJson.forEach((item) =>
 	{
-		const itemtype = item.Key;
-		let newName = null;
-
-		// Gold
-		if (itemtype === 'gld')
+		if (item.Key === "gld")
 		{
-			newName = ``;
-		}
-
-		if (newName != null)
-		{
-			// update all localizations
-			for (const key in item)
+			// Update all localizations
+			for (let key in item)
 			{
 				if (key !== 'id' && key !== 'Key')
 				{
-					item[key] = newName;
+					item[key] = "";
 				}
 			}
 		}
 	});
-
-	D2RMM.writeJson(itemNameAffixesFilename, itemNameAffixes);
 }
 
-// Directory containing rune definitions
-const runesDir = "hd\\items\\misc\\rune";
-
-//Change high rune names on the ground
-const itemRunesFilename = 'local\\lng\\strings\\item-runes.json';
-const itemRunes = D2RMM.readJson(itemRunesFilename);
-
-itemRunes.forEach((item) =>
+// Rune highlighting and light beam
+itemRunesJson.forEach((item) =>
 {
-	const itemtype = item.Key;
+	const runeName = item.Key;
 	let newName = null;
 
-	if (config["lbr_" + itemtype])
+	if (config["lbr_" + runeName])
 	{
 		// Get the string "Pul Rune", get the first word, convert to lowercase, append the rest
 		const runeFile = runesDir + "\\" + item.enUS.split(" ")[0].toLowerCase() + "_rune.json";
@@ -283,7 +267,7 @@ itemRunes.forEach((item) =>
 		addLightBeam(runeFile);
 	}
 
-	switch (itemtype)
+	switch (runeName)
 	{
 		// Low runes from El to Lem
 		case "r01":
@@ -306,7 +290,7 @@ itemRunes.forEach((item) =>
 		case "r18":
 		case "r19":
 			// remove leading 'r', then convert to number to remove any leading zero for first 9 levels
-			newName = item.enUS + ` ÿc5[ÿc7` + Number(itemtype.substring(1)) + `ÿc5]`;
+			newName = item.enUS + ` ÿc5[ÿc7` + Number(runeName.substring(1)) + `ÿc5]`;
 			break;
 			// Lem, Pul, Um, Mal, Ist
 		case "r20":
@@ -314,14 +298,14 @@ itemRunes.forEach((item) =>
 		case "r22":
 		case "r23":
 		case "r24":
-			newName = `ÿc1*  ÿc@` + item.enUS + ` ÿc0[ÿc1` + itemtype.substring(1) + `ÿc0]  ÿc1*`;
+			newName = `ÿc1*  ÿc@` + item.enUS + ` ÿc0[ÿc1` + runeName.substring(1) + `ÿc0]  ÿc1*`;
 			break;
 			// Gul, Vex, Ohm, Lo
 		case "r25":
 		case "r26":
 		case "r27":
 		case "r28":
-			newName = `ÿcA*ÿc1*  ÿc@` + item.enUS + ` ÿc0[ÿc1` + itemtype.substring(1) + `ÿc0]  ÿcA*ÿc1*`;
+			newName = `ÿcA*ÿc1*  ÿc@` + item.enUS + ` ÿc0[ÿc1` + runeName.substring(1) + `ÿc0]  ÿcA*ÿc1*`;
 			break;
 			// Sur, Ber, Jah, Cham, Zod
 		case "r29":
@@ -329,14 +313,14 @@ itemRunes.forEach((item) =>
 		case "r31":
 		case "r32":
 		case "r33":
-			newName = `ÿc;*ÿc2*ÿc1*    ÿc@` + item.enUS + ` ÿc0[ÿc2` + itemtype.substring(1) + `ÿc0]    ÿc;*ÿc2*ÿc1*`;
+			newName = `ÿc;*ÿc2*ÿc1*    ÿc@` + item.enUS + ` ÿc0[ÿc2` + runeName.substring(1) + `ÿc0]    ÿc;*ÿc2*ÿc1*`;
 			break;
 	}
 
 	if (newName != null)
 	{
-		// update all localizations
-		for (const key in item)
+		// Update all localizations
+		for (let key in item)
 		{
 			if (key !== 'id' && key !== 'Key')
 			{
@@ -346,19 +330,16 @@ itemRunes.forEach((item) =>
 	}
 });
 
-D2RMM.writeJson(itemRunesFilename, itemRunes);
-
-//change on-ground tooltip style to be slightly smaller and less see-through
-const profileHDFilename = 'global\\ui\\layouts\\_profilehd.json';
-const profileHD = D2RMM.readJson(profileHDFilename);
-// @ts-ignore
-profileHD.TooltipStyle.inGameBackgroundColor = [0, 0, 0, 0.85],
-// @ts-ignore
-profileHD.TooltipStyle.backgroundColor = [0, 0, 0, 0.9],
-//profileHD.TooltipFontSize = 32,
-// @ts-ignore
-profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1, 0.1, 0.2, 1],
-D2RMM.writeJson(profileHDFilename, profileHD);
+// Change on-ground tooltip style to be less see-through
+// const profileHDJson = D2RMM.readJson(profileHDFile);
+// // @ts-ignore
+// profileHDJson.TooltipStyle.inGameBackgroundColor = [0, 0, 0, 0.85];
+// // @ts-ignore
+// profileHDJson.TooltipStyle.backgroundColor = [0, 0, 0, 0.9];
+// profileHD.TooltipFontSize = 32,
+// // @ts-ignore
+// profileHDJson.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1, 0.1, 0.2, 1];
+// D2RMM.writeJson(profileHDFile, profileHDJson);
 
 // Assassin charges HUD
 if (config["ach_enable"])
@@ -370,6 +351,11 @@ if (config["misc_skipintro"])
 {
 	D2RMM.copyFile("hd\\global\\video", "hd\\global\\video", true);
 }
+
+// Write our JSON files
+D2RMM.writeJson(itemNamesFile, itemNamesJson);
+D2RMM.writeJson(itemNameAffixesFile, itemNameAffixesJson);
+D2RMM.writeJson(itemRunesFile, itemRunesJson);
 
 if(config["misc_debug"])
 {
