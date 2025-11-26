@@ -2047,7 +2047,8 @@
 								{
 									"id":"bth_9tw",
 									"name":"Greater Talons",
-									"type":"checkbox"
+									"type":"checkbox",
+									"defaultValue":true
 								},
 								{
 									"id":"bth_9qr",
@@ -2595,7 +2596,8 @@
 								{
 									"id":"bth_uui",
 									"name":"Dusk Shroud",
-									"type":"checkbox"
+									"type":"checkbox",
+									"defaultValue":true
 								},
 								{
 									"id":"bth_uea",
@@ -2640,7 +2642,8 @@
 								{
 									"id":"bth_utp",
 									"name":"Archon Plate",
-									"type":"checkbox"
+									"type":"checkbox",
+									"defaultValue":true
 								},
 								{
 									"id":"bth_uld",
@@ -3012,7 +3015,8 @@
 								{
 									"id":"bth_ci3",
 									"name":"Diadem",
-									"type":"checkbox"
+									"type":"checkbox",
+									"defaultValue":true
 								}
 							]
 						},
@@ -3273,7 +3277,8 @@
 								{
 									"id":"bth_7wc",
 									"name":"Giant Thresher",
-									"type":"checkbox"
+									"type":"checkbox",
+									"defaultValue":true
 								}
 							]
 						},
@@ -3324,7 +3329,8 @@
 								{
 									"id":"bth_uit",
 									"name":"Monarch",
-									"type":"checkbox"
+									"type":"checkbox",
+									"defaultValue":true
 								},
 								{
 									"id":"bth_upk",
