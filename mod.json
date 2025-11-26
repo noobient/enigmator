@@ -3597,6 +3597,12 @@
 					"defaultValue":true
 				},
 				{
+					"id":"ihl_jewel",
+					"name":"Jewels",
+					"type":"checkbox",
+					"defaultValue":true
+				},
+				{
 					"id":"ihl_fullrejuv",
 					"name":"Full Rejuvenation Potions",
 					"type":"checkbox",

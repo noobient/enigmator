@@ -71,7 +71,10 @@ export function highlightItems(jsonData: JSONData): void
 				newName = item.enUS + ` ÿc5[ÿc:•••ÿc5]`;
 				break;
 			case "jew": // Jewel
-				newName = `• Jewel •ÿcN`;
+				if (config["ihl_jewel"])
+				{
+					newName = `<<< Jewel >>>ÿcN`;
+				}
 				break;
 		}
 
