@@ -57,7 +57,7 @@ function highlightGems(jsonFile: string)
 			case "gsg": // Emerald
 			case "glg": // Flawless Emerald
 			case "gpg": // Perfect Emerald
-				gemColor = `ÿcQ`;
+				gemColor = `ÿc:`;
 				break;
 			case "gcr": // Chipped Ruby
 			case "gfr": // Flawed Ruby
