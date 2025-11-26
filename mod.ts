@@ -311,4 +311,7 @@ profileHD.TooltipStyle.inGameShowItemsSelectedBackgroundColor = [0.1, 0.1, 0.2, 
 D2RMM.writeJson(profileHDFilename, profileHD);
 
 // Assassin charges HUD
-addAssassinChargesHUD();
+if (Object.hasOwn(config, "ach_enable") && config["ach_enable"])
+{
+	addAssassinChargesHUD();
+}

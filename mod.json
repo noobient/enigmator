@@ -3586,6 +3586,27 @@
 			]
 		},
 		{
+			"id":"assassinChargesHud",
+			"name":"Assassin Charges HUD",
+			"description": "Enable a visual overlay to indicate the state of your assassin MA charges.",
+			"type":"section",
+			"children":[
+				{
+					"id":"ach_enable",
+					"name":"Enable HUD",
+					"type":"checkbox"
+				},
+				{
+					"id":"ach_ypos",
+					"name":"Y axis position",
+					"description": "Sets the height of the overlay.",
+					"type":"number",
+					"defaultValue":100.15,
+					"minValue":0
+				}
+			]
+		},
+		{
 			"id":"misc",
 			"name":"Miscellaneous",
 			"type":"section",

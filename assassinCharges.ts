@@ -44,8 +44,15 @@ const chargeTypes: string[][]=
 ]
 
 // Sprite positioning
-// y is fixed, others are incremented
-const yValue = 100.15;
+if (Object.hasOwn(config, "ach_ypos") && config["ach_ypos"])
+{
+	const yValue = config["ach_ypos"];
+}
+else
+{
+	const yValue = 100.15;
+}
+
 var xValue = 155.0;
 var zValue = 148.0;
 // x and z coordinates are increased / decreased by this value per charge type
