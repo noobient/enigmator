@@ -1,5 +1,6 @@
 {
 	"compilerOptions":{
+		"target": "es2022",
 		"types": ["../d2rmm/src/mods/types.d.ts"]
 	}
 }
