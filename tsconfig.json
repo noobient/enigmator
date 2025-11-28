@@ -1,0 +1,5 @@
+{
+	"compilerOptions":{
+		"types": ["../d2rmm/src/mods/types.d.ts"]
+	}
+}
