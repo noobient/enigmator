@@ -3656,6 +3656,7 @@
 			"name":"Assassin Charges HUD",
 			"description": "Enable a visual overlay to indicate the state of your assassin MA charges.",
 			"type":"section",
+			"defaultExpanded":false,
 			"children":[
 				{
 					"id":"ach_enable",
